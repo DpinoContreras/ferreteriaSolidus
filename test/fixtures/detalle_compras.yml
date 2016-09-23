@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numeroVenta: 1
+  reference: 
+  cantidadProducto: 1
+  precioUnitario: 1
+  precioVenta: 1
+
+two:
+  numeroVenta: 1
+  reference: 
+  cantidadProducto: 1
+  precioUnitario: 1
+  precioVenta: 1

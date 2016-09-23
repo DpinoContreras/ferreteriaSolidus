@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numeroventa:</strong>
+  <%= @detalle_compra.numeroVenta %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @detalle_compra.reference %>
+</p>
+
+<p>
+  <strong>Cantidadproducto:</strong>
+  <%= @detalle_compra.cantidadProducto %>
+</p>
+
+<p>
+  <strong>Preciounitario:</strong>
+  <%= @detalle_compra.precioUnitario %>
+</p>
+
+<p>
+  <strong>Precioventa:</strong>
+  <%= @detalle_compra.precioVenta %>
+</p>
+
+<%= link_to 'Edit', edit_detalle_compra_path(@detalle_compra) %> |
+<%= link_to 'Back', detalle_compras_path %>

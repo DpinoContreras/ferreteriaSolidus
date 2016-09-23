@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comunaubicacion:</strong>
+  <%= @ubicacion.comunaUbicacion %>
+</p>
+
+<p>
+  <strong>Direccionubicacion:</strong>
+  <%= @ubicacion.direccionUbicacion %>
+</p>
+
+<%= link_to 'Edit', edit_ubicacion_path(@ubicacion) %> |
+<%= link_to 'Back', ubicacions_path %>

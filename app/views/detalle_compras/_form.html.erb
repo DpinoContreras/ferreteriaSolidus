@@ -1,0 +1,37 @@
+<%= form_for(@detalle_compra) do |f| %>
+  <% if @detalle_compra.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@detalle_compra.errors.count, "error") %> prohibited this detalle_compra from being saved:</h2>
+
+      <ul>
+      <% @detalle_compra.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numeroVenta %><br>
+    <%= f.number_field :numeroVenta %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %><br>
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidadProducto %><br>
+    <%= f.number_field :cantidadProducto %>
+  </div>
+  <div class="field">
+    <%= f.label :precioUnitario %><br>
+    <%= f.number_field :precioUnitario %>
+  </div>
+  <div class="field">
+    <%= f.label :precioVenta %><br>
+    <%= f.number_field :precioVenta %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
